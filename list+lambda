@@ -1,0 +1,53 @@
+names = ["ankit", "Ankit","amankumar", "amitraj","anmol","LPU"]
+result = sorted(names, key = lambda s: len(s))
+print(result)
+
+nums = [1,2,3,4,5,6,7,8,9,10]
+evens = list(filter(lambda x:x%2==0,nums))
+print(evens)
+
+nums = [1,2,3,4,5]
+squares = list(map(lambda x: x*x,nums))
+print(squares)
+
+words = ["hello", "python", "lambda"]
+upper = list(map(lambda x: x.upper(),words))
+print(upper)
+
+scores = [10,30,56,4,7,98,20,89]
+high = list(filter(lambda x : x>50,scores))
+print(high)
+
+students = [{"name": "Ankit", "marks":100},
+            {"name": "Ani", "marks":89},
+            {"name": "shyam", "marks":99}]
+
+sorted_students = sorted(students, key= lambda x: x["marks"])
+print(sorted_students)
+
+words = ["aplle","banana","orange","litchi"]
+first = list(map(lambda x: x[0],words))
+print(first)
+
+a = [1,2,3]
+b = [4,5,6]
+result = list(map(lambda x,y : x+y, a,b))
+print(result)
+
+
+nums = [29,17,33,48,56]
+sorted_names  = sorted(nums, key = lambda x :x%10)
+print(sorted_names)
+
+#digit obtain 
+
+num = 23455
+lat_digit = num%10
+second_last_digit = (num//10)%10
+third_last_digit = (num//100)%10
+second_from_start = int(str(num)[1])
+
+print(lat_digit)
+print(second_last_digit)
+print(third_last_digit)
+print(second_from_start)
